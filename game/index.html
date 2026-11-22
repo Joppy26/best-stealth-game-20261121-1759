@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shadow Courier — Night Archive</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <header>
+    <h1>SHADOW COURIER <span>· Night Archive</span></h1>
+    <p class="tag">A top-down stealth game — slip past the night guards, grab the files, reach the green exit unseen.</p>
+  </header>
+  <div id="hud">
+    <span id="hud-level">Level 1/3</span>
+    <span id="hud-objective">Files 0/3</span>
+    <span id="hud-alert">CALM</span>
+    <span id="hud-timer">0:00</span>
+    <span id="hud-pebbles">Pebbles ×5</span>
+  </div>
+  <canvas id="game" width="960" height="600" tabindex="0" aria-label="Shadow Courier stealth game"></canvas>
+  <div id="help">
+    <b>Move:</b> WASD / arrows, or left-click a spot to walk there ·
+    <b>Distract:</b> right-click (or press F) to toss a pebble at the cursor — guards go look ·
+    <b>Hide:</b> crouch behind crates, stand still in bushes, stay in shadow · hold Shift to crouch (slower, harder to spot) ·
+    <b>Goal:</b> collect the glowing files, then reach the green EXIT. Spotted fully = caught.
+  </div>
+  <div id="overlay"></div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
